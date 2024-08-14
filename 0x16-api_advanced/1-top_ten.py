@@ -2,7 +2,6 @@
 '''
     this module contains the function top_ten
 '''
-
 import requests
 
 def top_ten(subreddit):
@@ -11,7 +10,6 @@ def top_ten(subreddit):
 
     try:
         response = requests.get(url, headers=headers, timeout=10)
-
         # Check if the subreddit is valid
         if response.status_code != 200:
             print(None)
@@ -30,4 +28,3 @@ def top_ten(subreddit):
 
 # Example usage
 top_ten('python')
-
